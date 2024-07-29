@@ -9,6 +9,10 @@ Entidades, Objetos de Valor, [Servicios de Dominio,] Agregados, Fábricas y Repo
 
 # Patrones de Arquitectura
 Arquitectura Hexagonal usando DDD
+Entidades, Objetos de Valor, [Servicios de Dominio,] Agregados, Módulos, Fábricas y Repositorios
+
+# Patrones de Arquitectura
+
 
 # Pruebas de APIs
 * Postman
