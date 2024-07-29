@@ -1,7 +1,7 @@
 package com.banco.bancorestapi.application.services;
 
 import com.banco.bancorestapi.application.ports.inbound.ClienteService;
-import com.banco.bancorestapi.application.ports.outbound.ClienteRepositorio;
+import com.banco.bancorestapi.application.ports.outbound.ClienteRepository;
 import com.banco.bancorestapi.domain.entities.Cliente;
 import org.springframework.stereotype.Service;
 
@@ -10,35 +10,35 @@ import java.util.List;
 @Service
 public class ClienteServiceImpl implements ClienteService {
 
-    private final ClienteRepositorio clienteRepositorio;
+    private final ClienteRepository clienteRepository;
 
-    public ClienteServiceImpl(ClienteRepositorio clienteRepositorio) {
-        this.clienteRepositorio = clienteRepositorio;
+    public ClienteServiceImpl(ClienteRepository clienteRepository) {
+        this.clienteRepository = clienteRepository;
     }
 
     @Override
     public List<Cliente> listAll() {
-        return clienteRepositorio.findAll();
+        return clienteRepository.findAll();
     }
 
     @Override
     public Cliente listById(int id) {
-        return clienteRepositorio.findById(id).get();
+        return clienteRepository.findById(id).get();
     }
 
     @Override
     public Cliente create(Cliente cliente) {
-        return clienteRepositorio.save(cliente);
+        return clienteRepository.save(cliente);
     }
 
     @Override
     public Cliente update(Cliente cliente) {
-        return clienteRepositorio.save(cliente);
+        return clienteRepository.save(cliente);
     }
 
     @Override
     public void delete(int id) {
-        clienteRepositorio.deleteById(id);
+        clienteRepository.deleteById(id);
     }
 
 
