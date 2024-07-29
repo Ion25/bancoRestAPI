@@ -1,5 +1,6 @@
 package com.banco.bancorestapi.domain.entities;
 
+import com.banco.bancorestapi.domain.exceptions.FondosInsuficientesException;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -45,5 +46,12 @@ public class Cuenta {
 
     public void setTipoCuenta(String tipoCuenta) {
         this.tipoCuenta = tipoCuenta;
+    }
+
+    public void debitar(double monto) {
+        if (saldo < monto) {
+            throw new FondosInsuficientesException("Fondos insuficientes para realizar la operación.");
+        }
+        saldo = saldo - monto;
     }
 }

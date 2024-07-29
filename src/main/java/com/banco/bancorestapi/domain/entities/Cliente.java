@@ -14,6 +14,7 @@ public class Cliente {
     private String direccion;
     private String telefono;
     private String email;
+    private int scoreCredito;
 
     //@Embedded
     //private Identificacion identificacion;
@@ -71,6 +72,15 @@ public class Cliente {
     public void setEmail(String email) {
         this.email = email;
     }
+
+    public int getScoreCredito() {
+        return scoreCredito;
+    }
+
+    public void setScoreCredito(int scoreCredito) {
+        this.scoreCredito = scoreCredito;
+    }
+
     /*
     public Identificacion getIdentificacion() {
         return identificacion;

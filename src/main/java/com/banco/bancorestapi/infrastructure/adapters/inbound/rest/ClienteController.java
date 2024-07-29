@@ -15,12 +15,6 @@ public class ClienteController {
     @Autowired
     private ClienteService clienteService;
 
-    /*
-    public ClienteController(ClienteService clienteService) {
-        this.clienteService = clienteService;
-    }
-    */
-
     @GetMapping("/{id}")
     public ResponseEntity<?> listById(@PathVariable int id) {
         Cliente cliente = clienteService.listById(id);
