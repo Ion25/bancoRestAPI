@@ -65,3 +65,173 @@ Para la evaluación de la seguridad de la aplicación, se utilizó OWASP ZAP (Ve
 ## Enlaces de Referencia
 - [OWASP ZAP](https://www.zaproxy.org/)
 - [Guía de Pruebas de OWASP](https://owasp.org/wstg)
+
+# Documentación de Servicios de Banco
+
+## Descripción General
+
+Esta API permite gestionar diversos aspectos de los servicios bancarios, incluyendo clientes, cuentas, transacciones y más.
+
+## Recursos
+
+### Cliente
+Representa a un cliente del banco.
+
+#### Esquema
+```json
+{
+  "Cliente": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "integer"
+      },
+      "nombre": {
+        "type": "string"
+      },
+      "email": {
+        "type": "string",
+        "format": "email"
+      },
+      "telefono": {
+        "type": "string"
+      }
+    }
+  }
+}
+```
+
+#### Operaciones
+
+##### Obtener Lista de Clientes
+Obtiene una lista de todos los clientes.
+
+- **URL:** /api/clientes
+- **Método:** GET
+- **Respuesta:**
+  - **Código 200:** Lista de clientes
+  - **Ejemplo de respuesta:**
+    ```json
+    [
+      {
+        "id": 1,
+        "nombre": "Juan Perez",
+        "email": "juan.perez@example.com",
+        "telefono": "123456789"
+      }
+    ]
+    ```
+
+##### Obtener Cliente por ID
+Obtiene los detalles de un cliente específico por su ID.
+
+- **URL:** /api/clientes/{id}
+- **Método:** GET
+- **Parámetros de ruta:**
+  - id (integer, requerido): ID del cliente
+- **Respuesta:**
+  - **Código 200:** Detalles del cliente
+  - **Código 404:** Cliente no encontrado
+  - **Ejemplo de respuesta:**
+    ```json
+    {
+      "id": 1,
+      "nombre": "Juan Perez",
+      "email": "juan.perez@example.com",
+      "telefono": "123456789"
+    }
+    ```
+
+##### Crear un Nuevo Cliente
+Crea un nuevo cliente en el sistema.
+
+- **URL:** /api/clientes
+- **Método:** POST
+- **Cuerpo de la solicitud:**
+  ```json
+  {
+    "nombre": "Juan Perez",
+    "email": "juan.perez@example.com",
+    "telefono": "123456789"
+  }
+  ```
+- **Respuesta:**
+  - **Código 201:** Cliente creado
+  - **Ejemplo de respuesta:**
+    ```json
+    {
+      "id": 1,
+      "nombre": "Juan Perez",
+      "email": "juan.perez@example.com",
+      "telefono": "123456789"
+    }
+    ```
+
+##### Actualizar un Cliente
+Actualiza los detalles de un cliente existente.
+
+- **URL:** /api/clientes/{id}
+- **Método:** PUT
+- **Parámetros de ruta:**
+  - id (integer, requerido): ID del cliente
+- **Cuerpo de la solicitud:**
+  ```json
+  {
+    "nombre": "Juan Perez",
+    "email": "juan.perez@example.com",
+    "telefono": "123456789"
+  }
+  ```
+- **Respuesta:**
+  - **Código 200:** Cliente actualizado
+  - **Código 404:** Cliente no encontrado
+  - **Ejemplo de respuesta:**
+    ```json
+    {
+      "id": 1,
+      "nombre": "Juan Perez",
+      "email": "juan.perez@example.com",
+      "telefono": "123456789"
+    }
+    ```
+
+##### Eliminar un Cliente
+Elimina un cliente del sistema.
+
+- **URL:** /api/clientes/{id}
+- **Método:** DELETE
+- **Parámetros de ruta:**
+  - id (integer, requerido): ID del cliente
+- **Respuesta:**
+  - **Código 204:** Cliente eliminado
+  - **Código 404:** Cliente no encontrado
+
+### Modelo de Datos
+
+#### Esquema de Cliente
+El modelo de datos del cliente incluye los siguientes campos:
+
+- id (integer): ID único del cliente.
+- nombre (string): Nombre del cliente.
+- email (string): Dirección de correo electrónico del cliente.
+- telefono (string): Número de teléfono del cliente.
+
+#### Ejemplo de Cliente
+```json
+{
+  "id": 1,
+  "nombre": "Juan Perez",
+  "email": "juan.perez@example.com",
+  "telefono": "123456789"
+}
+```
+
+## Servidor
+
+- **Base URL:** http://localhost:8080
+
+## Herramienta Swagger
+Para interactuar con la API, puedes usar la herramienta Swagger. Navega a http://localhost:8080/swagger-ui/ para ver y probar los endpoints de la API.
+
+## Información Adicional
+Para más detalles sobre cómo configurar y usar esta API, consulta la documentación de Swagger disponible en la URL anterior.
