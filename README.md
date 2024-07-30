@@ -72,9 +72,6 @@ Para la evaluación de la seguridad de la aplicación, se utilizó OWASP ZAP (Ve
 
 Esta API permite gestionar diversos aspectos de los servicios bancarios, incluyendo clientes, cuentas, transacciones y más.
 
-![swagger](https://github.com/user-attachments/assets/9504e344-69f0-43dd-aeca-336c9873a126)
-
-
 ## Recursos
 
 ### Cliente
@@ -231,10 +228,9 @@ El modelo de datos del cliente incluye los siguientes campos:
 
 ## Servidor
 
-- **Base URL:** http://localhost:8080
+- **Base URL:** http://localhost:8080/swagger-ui/index.html
 
 ## Herramienta Swagger
-Para interactuar con la API, puedes usar la herramienta Swagger. Navega a http://localhost:8080/swagger-ui/ para ver y probar los endpoints de la API.
 
-## Información Adicional
-Para más detalles sobre cómo configurar y usar esta API, consulta la documentación de Swagger disponible en la URL anterior.
+![swagger](https://github.com/user-attachments/assets/9504e344-69f0-43dd-aeca-336c9873a126)
+
