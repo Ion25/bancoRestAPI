@@ -17,53 +17,51 @@ Arquitectura Hexagonal usando DDD
 
 # Pruebas de Seguridad
 
+## Herramienta Utilizada
 
-# Proyecto de Diseño Orientado al Dominio (DDD)
+Link Informe: https://drive.google.com/file/d/1idunNmyrFZWGPyaF81257UjyACCMAA-w/view?usp=sharing
 
-## Introducción
+Para la evaluación de la seguridad de la aplicación, se utilizó OWASP ZAP (Versión 2.15.0), una herramienta open-source diseñada para encontrar vulnerabilidades en aplicaciones web.
 
-Este proyecto implementa los principios de Diseño Orientado al Dominio (DDD) utilizando una arquitectura hexagonal. El objetivo es crear una aplicación modular, mantenible y escalable que sigue los patrones de diseño de software recomendados.
+## Parámetros del Informe
+- **Fecha del escaneo**: 30 de marzo de 2024
+- **Contextos**: No se seleccionó ningún contexto específico, por lo que se incluyeron todos de forma predeterminada.
+- **Sitios Escaneados**: `http://localhost:8080`
+- **Niveles de Riesgo Incluidos**: Alto, Medio, Bajo, Informativo
+- **Niveles de Confianza Incluidos**: Confirmado por Usuario, Alta, Media, Baja
 
-## Domain-Driven Design (DDD)
+## Resumen del Informe
+### Conteo de Alertas por Riesgo y Confianza
+| Confianza    | Alto | Medio | Bajo | Informativo | Total |
+|--------------|------|-------|------|-------------|-------|
+| Alta         | 0    | 0     | 0    | 0           | 0     |
+| Media        | 0    | 0     | 0    | 1           | 1     |
+| Baja         | 0    | 0     | 0    | 0           | 0     |
+| Confirmado   | 0    | 0     | 0    | 0           | 0     |
+| **Total**    | 0    | 0     | 0    | 1           | 1     |
 
-### Entidades
-Las entidades representan objetos del dominio con identidad propia que persiste a lo largo del tiempo. Son fundamentales para el modelado del dominio y contienen tanto datos como comportamiento.
+### Recuento de Alertas por Sitio y Riesgo
+| Sitio                 | Alto | Medio | Bajo | Informativo |
+|-----------------------|------|-------|------|-------------|
+| http://localhost:8080 | 0    | 0     | 0    | 1           |
 
-### Objetos de Valor
-Los objetos de valor representan conceptos del dominio que se distinguen por sus propiedades en lugar de su identidad. Son inmutables y su igualdad se determina por los valores de sus propiedades.
+### Recuento de Alertas por Tipo de Alerta
+| Tipo de Alerta          | Riesgo      | Cantidad |
+|-------------------------|-------------|----------|
+| Agente de Usuario Fuzzer| Informativo | 1        |
 
-### Servicios de Dominio
-Los servicios de dominio encapsulan lógica de negocio que no pertenece a ninguna entidad u objeto de valor. Son responsables de operaciones que involucran múltiples objetos del dominio o no pueden ser fácilmente asignadas a una sola entidad.
+## Detalles de las Alertas
+### Agente de Usuario Fuzzer
+- **Riesgo**: Informativo
+- **Confianza**: Media
+- **Descripción**: El escáner activo identificó un comportamiento anómalo en la manipulación del agente de usuario.
+- **Referencia**: [OWASP User Agent Fuzzer](https://www.zaproxy.org/docs/alerts/10104/)
 
-### Agregados
-Los agregados son clústeres de objetos del dominio que se tratan como una unidad de consistencia. Tienen una entidad raíz que controla el acceso a los demás objetos del agregado.
+## Acciones Recomendadas
+1. **Revisión de Agente de Usuario**: Verificar las configuraciones del agente de usuario en la aplicación y ajustar según las mejores prácticas de seguridad.
+2. **Mejora de Seguridad**: Implementar medidas adicionales para detectar y mitigar posibles manipulaciones de agentes de usuario.
+3. **Monitoreo Continuo**: Continuar monitoreando y escaneando la aplicación regularmente utilizando herramientas como OWASP ZAP para asegurar que nuevas vulnerabilidades no sean introducidas.
 
-### Fábricas
-Las fábricas son responsables de la creación de objetos complejos del dominio, encapsulando la lógica necesaria para construirlos y asegurando su consistencia desde el momento de su creación.
-
-### Repositorios
-Los repositorios actúan como intermediarios entre el dominio y la capa de persistencia, proporcionando métodos para recuperar y almacenar agregados y otros objetos del dominio.
-
-## Patrones de Arquitectura
-
-### Arquitectura Hexagonal usando DDD
-La arquitectura hexagonal, también conocida como Puertos y Adaptadores, permite aislar el núcleo del dominio de los detalles técnicos e infraestructura. Utilizando DDD, se enfoca en:
-
-- **Core del Dominio:** La lógica de negocio central, modelada usando entidades, objetos de valor, servicios de dominio, agregados y fábricas.
-- **Adaptadores de Entrada:** Interfaces y controladores que permiten la interacción con el sistema, como API RESTful.
-- **Adaptadores de Salida:** Implementaciones concretas de interfaces para interactuar con bases de datos, servicios externos, etc.
-
-## Pruebas de APIs
-
-### Postman
-Se utilizan colecciones de Postman para realizar pruebas automáticas de las APIs desarrolladas. Estas pruebas aseguran que las endpoints respondan correctamente y se comporten de acuerdo a lo esperado.
-
-### Pruebas de Rendimiento
-Las pruebas de rendimiento evalúan la capacidad del sistema para manejar cargas de trabajo bajo diferentes condiciones. Herramientas como JMeter pueden ser utilizadas para simular múltiples usuarios y medir tiempos de respuesta y throughput.
-
-### Pruebas de Seguridad
-Las pruebas de seguridad se enfocan en identificar y corregir vulnerabilidades dentro de la aplicación. Se pueden emplear herramientas como OWASP ZAP para escanear las APIs y asegurar que cumplen con los estándares de seguridad.
-
-## Conclusión
-
-Este proyecto demuestra cómo aplicar principios de DDD junto con una arquitectura hexagonal para construir sistemas robustos y mantenibles. A través de pruebas rigurosas de API, rendimiento y seguridad, se asegura que el sistema no solo sea funcional, sino también eficiente y seguro.
+## Enlaces de Referencia
+- [OWASP ZAP](https://www.zaproxy.org/)
+- [Guía de Pruebas de OWASP](https://owasp.org/wstg)
