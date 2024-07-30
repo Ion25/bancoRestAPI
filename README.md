@@ -66,11 +66,14 @@ Para la evaluación de la seguridad de la aplicación, se utilizó OWASP ZAP (Ve
 - [OWASP ZAP](https://www.zaproxy.org/)
 - [Guía de Pruebas de OWASP](https://owasp.org/wstg)
 
-# Documentación de Servicios de Banco
+# Documentación de Servicios de Banco en base al estándar OpenAPI y la Herramienta Swagger
 
 ## Descripción General
 
 Esta API permite gestionar diversos aspectos de los servicios bancarios, incluyendo clientes, cuentas, transacciones y más.
+
+![swagger](https://github.com/user-attachments/assets/9504e344-69f0-43dd-aeca-336c9873a126)
+
 
 ## Recursos
 
