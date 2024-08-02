@@ -71,4 +71,8 @@ Este proyecto demuestra cómo aplicar principios de DDD junto con una arquitectu
 # Practicas BPM
 ## Procesos de Negocio
 1.**Proceso de Apertura de Cuentas**:
+1.1.**Modelo y Descripcion del Modelo**: Permite abrir cuentas bancarias a los nuevos clientes
+1.2.**Roles Involucrados**: 
+a. ** Cliente**:
+b. ** Sistema Bancario**:
 
