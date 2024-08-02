@@ -85,5 +85,5 @@ Permite abrir cuentas bancarias a los nuevos clientes.
 - **Oficial de Servicio al Cliente**: Empleado del banco que asiste al solicitante en el proceso de apertura de cuenta.
 
 #### 1.4. Diagrama
-![Diagrama de Apertura de Cuentas](ProcesosNegocio/imgs/procesoAperturaCuenta)
+![Diagrama de Apertura de Cuentas](ProcesosNegocio/imgs/procesoAperturaCuenta.png)
 
