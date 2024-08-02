@@ -40,6 +40,10 @@ Arquitectura Hexagonal usando DDD
 * Postman
 
 # Pruebas de Rendimiento
+Para las pruebas de rendimiento utilizamos la herramienta JMeter, la cual nos proporcionó las pruebas a todas las funcionalidades críticas de nuestra aplicación bancaria. A continuación, se detallan los pasos y comandos utilizados para ejecutar las pruebas de rendimiento y generar los reportes correspondientes.
+Link Informe: https://drive.google.com/file/d/1g6d6P7k5Loh3hLQ6jRvwHuvDR3dnyIHE/view?usp=sharing
+
+![image](https://github.com/user-attachments/assets/eb015835-6a4c-4d79-a8a2-7df65816d579)
 
 # Pruebas de Seguridad
 
