@@ -258,3 +258,90 @@ El modelo de datos del cliente incluye los siguientes campos:
 
 ![swagger](https://github.com/user-attachments/assets/9504e344-69f0-43dd-aeca-336c9873a126)
 
+
+Este proyecto demuestra cómo aplicar principios de DDD junto con una arquitectura hexagonal para construir sistemas robustos y mantenibles. A través de pruebas rigurosas de API, rendimiento y seguridad, se asegura que el sistema no solo sea funcional, sino también eficiente y seguro.
+# Prácticas BPM
+
+## Procesos de Negocio
+
+### 1. Proceso de Apertura de Cuentas
+
+#### 1.1. Modelo y Descripción del Modelo
+Permite abrir cuentas bancarias a los nuevos clientes.
+
+#### 1.2. Roles Involucrados
+- **Cliente**: Persona que solicita la apertura de una cuenta bancaria.
+- **Sistema Bancario**: Plataforma tecnológica utilizada para gestionar las cuentas bancarias.
+
+#### 1.3. Actores
+- **Solicitante**: Cliente que inicia el proceso de apertura de cuenta.
+- **Oficial de Servicio al Cliente**: Empleado del banco que asiste al solicitante en el proceso de apertura de cuenta.
+
+#### 1.4. Diagrama
+![Diagrama de Apertura de Cuentas](ProcesosNegocio/imgs/procesoAperturaCuenta.png)
+
+### 2. Proceso de Transferencias de Fondos
+
+#### 2.1. Modelo y Descripción del Modelo
+Gestiona las transferencias de fondos entre cuentas dentro del banco.
+
+#### 2.2. Roles Involucrados
+- **Remitente**: Persona que realizara la transaccion a otra cuenta que sera el destinatario.
+- **Sistema Bancario**: Plataforma tecnológica utilizada para gestionar la transaccion.
+
+#### 2.3. Actores
+- **Remitente**: Cliente que inicia el proceso de solicitud de transaccion de fondos.
+- **Oficial de Tranferencias**: Empleado del banco que asiste al remitente y da el visto bueno a la transferencia de fondos.
+
+#### 2.4. Diagrama
+![Diagrama de Apertura de Cuentas](ProcesosNegocio/imgs/ProcesoTransferenciaFondos.png)
+
+### 3. Proceso de Pago de Servicios
+
+#### 3.1. Modelo y Descripción del Modelo
+Permite a los clientes pagar facturas y servicios a través del banco.
+
+#### 3.2. Roles Involucrados
+- **Cliente**: Persona que realizara el pago a traves del sistema bancario.
+- **Sistema Bancario**: Plataforma tecnológica utilizada para realizar pagos de servicios.
+
+#### 3.3. Actores
+- **Cliente**: Cliente que inicia el proceso de pago de servicios.
+- **Proveedor de Servicios**: Empleado del banco que asiste al cliente en el pago de servicios.
+
+#### 3.4. Diagrama
+![Diagrama de Apertura de Cuentas](ProcesosNegocio/imgs/PagoDeServicios-2.0.png)
+
+### 4. Proceso de Solicitud de Préstamos
+
+#### 4.1. Modelo y Descripción del Modelo
+Permite a los clientes solicitar y gestionar préstamos bancarios.
+
+#### 4.2. Roles Involucrados
+- **Cliente**: Persona que solicitara un prestamo al banco.
+- **Sistema Bancario**: Plataforma tecnológica encargada de aprobar y supervisar el prestamo.
+
+#### 4.3. Actores
+- **Cliente**: Cliente que inicia el proceso para una solicitud de prestamo.
+- **Oficial de Prestamos**: Empleado del banco que asistira al cliente en la solicitud del prestamo y en la aprobacion del prestamo.
+
+#### 4.4. Diagrama
+![Diagrama de Apertura de Cuentas](ProcesosNegocio/imgs/SolicitudDePrestamo-2.0.png)
+
+### 5. Proceso de Gestión de Tarjetas de Crédito
+
+#### 5.1. Modelo y Descripción del Modelo
+Gestiona la emisión de tarjetas de crédito.
+
+#### 5.2. Roles Involucrados
+- **Cliente**: Persona que realizara la solicitud para obtener una tarjeta de credito.
+- **Sistema Bancario**: Plataforma tecnológica encargada de emitir las tarjetas de credito.
+
+#### 5.3. Actores
+- **Cliente**: Cliente que inicia el proceso para solicitar una tarjeta de credito.
+- **Oficial de Tarjetas de Credito**: Empleado del banco que evaluara si el cliente es apto para obtener una tarjeta de credito.
+
+#### 5.4. Diagrama
+![Diagrama de Apertura de Cuentas](ProcesosNegocio/imgs/GestionDeTarjetasCredito-2.0.png)
+
+
