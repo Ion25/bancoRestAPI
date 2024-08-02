@@ -33,6 +33,9 @@ Entidades, Objetos de Valor, [Servicios de Dominio,] Agregados, Fábricas y Repo
 
 # Patrones de Arquitectura
 Arquitectura Hexagonal usando DDD
+![hexagonalArchitecture](https://github.com/user-attachments/assets/79b71b12-a203-44fc-9497-a015bad4a8fc)
+
+
 
 # Pruebas de APIs
 * Postman
