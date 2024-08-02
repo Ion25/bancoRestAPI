@@ -103,3 +103,19 @@ Gestiona las transferencias de fondos entre cuentas dentro del banco.
 #### 2.4. Diagrama
 ![Diagrama de Apertura de Cuentas](ProcesosNegocio/imgs/ProcesoTransferenciaFondos.png)
 
+### 3. Proceso de Pago de Servicios
+
+#### 3.1. Modelo y Descripción del Modelo
+Permite a los clientes pagar facturas y servicios a través del banco.
+
+#### 3.2. Roles Involucrados
+- **Cliente**: Persona que realizara el pago a traves del sistema bancario.
+- **Sistema Bancario**: Plataforma tecnológica utilizada para realizar pagos de servicios.
+
+#### 3.3. Actores
+- **Cliente**: Cliente que inicia el proceso de pago de servicios.
+- **Proveedor de Servicios**: Empleado del banco que asiste al cliente en el pago de servicios.
+
+#### 3.4. Diagrama
+![Diagrama de Apertura de Cuentas](ProcesosNegocio/imgs/Pago de Servicios-2.0.png)
+
