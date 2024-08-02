@@ -117,5 +117,5 @@ Permite a los clientes pagar facturas y servicios a través del banco.
 - **Proveedor de Servicios**: Empleado del banco que asiste al cliente en el pago de servicios.
 
 #### 3.4. Diagrama
-![Diagrama de Apertura de Cuentas](ProcesosNegocio/imgs/PagodeServicios-2.0.png)
+![Diagrama de Apertura de Cuentas](ProcesosNegocio/imgs/PagoDeServicios-2.0.png)
 
