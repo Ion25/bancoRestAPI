@@ -87,3 +87,19 @@ Permite abrir cuentas bancarias a los nuevos clientes.
 #### 1.4. Diagrama
 ![Diagrama de Apertura de Cuentas](ProcesosNegocio/imgs/procesoAperturaCuenta.png)
 
+### 2. Proceso de Transferencias de Fondos
+
+#### 2.1. Modelo y Descripción del Modelo
+Gestiona las transferencias de fondos entre cuentas dentro del banco.
+
+#### 2.2. Roles Involucrados
+- **Remitente**: Persona que realizara la transaccion a otra cuenta que sera el destinatario.
+- **Sistema Bancario**: Plataforma tecnológica utilizada para gestionar la transaccion.
+
+#### 2.3. Actores
+- **Remitente**: Cliente que inicia el proceso de solicitud de transaccion de fondos.
+- **Oficial de Tranferencias**: Empleado del banco que asiste al remitente y da el visto bueno a la transferencia de fondos.
+
+#### 2.4. Diagrama
+![Diagrama de Apertura de Cuentas](ProcesosNegocio/imgs/ProcesoTransferenciaFondos.png)
+
