@@ -119,3 +119,35 @@ Permite a los clientes pagar facturas y servicios a través del banco.
 #### 3.4. Diagrama
 ![Diagrama de Apertura de Cuentas](ProcesosNegocio/imgs/PagoDeServicios-2.0.png)
 
+### 4. Proceso de Solicitud de Préstamos
+
+#### 4.1. Modelo y Descripción del Modelo
+Permite a los clientes solicitar y gestionar préstamos bancarios.
+
+#### 4.2. Roles Involucrados
+- **Cliente**: Persona que solicitara un prestamo al banco.
+- **Sistema Bancario**: Plataforma tecnológica encargada de aprobar y supervisar el prestamo.
+
+#### 4.3. Actores
+- **Cliente**: Cliente que inicia el proceso para una solicitud de prestamo.
+- **Oficial de Prestamos**: Empleado del banco que asistira al cliente en la solicitud del prestamo y en la aprobacion del prestamo.
+
+#### 4.4. Diagrama
+![Diagrama de Apertura de Cuentas](ProcesosNegocio/imgs/SolicitudDePrestamo-2.0.png)
+
+### 5. Proceso de Pago de Servicios
+
+#### 5.1. Modelo y Descripción del Modelo
+Permite a los clientes pagar facturas y servicios a través del banco.
+
+#### 5.2. Roles Involucrados
+- **Cliente**: Persona que realizara el pago a traves del sistema bancario.
+- **Sistema Bancario**: Plataforma tecnológica utilizada para realizar pagos de servicios.
+
+#### 5.3. Actores
+- **Cliente**: Cliente que inicia el proceso de pago de servicios.
+- **Proveedor de Servicios**: Empleado del banco que asiste al cliente en el pago de servicios.
+
+#### 5.4. Diagrama
+![Diagrama de Apertura de Cuentas](ProcesosNegocio/imgs/PagoDeServicios-2.0.png)
+
