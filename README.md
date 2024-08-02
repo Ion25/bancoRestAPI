@@ -67,3 +67,23 @@ Las pruebas de seguridad se enfocan en identificar y corregir vulnerabilidades d
 ## Conclusión
 
 Este proyecto demuestra cómo aplicar principios de DDD junto con una arquitectura hexagonal para construir sistemas robustos y mantenibles. A través de pruebas rigurosas de API, rendimiento y seguridad, se asegura que el sistema no solo sea funcional, sino también eficiente y seguro.
+# Prácticas BPM
+
+## Procesos de Negocio
+
+### 1. Proceso de Apertura de Cuentas
+
+#### 1.1. Modelo y Descripción del Modelo
+Permite abrir cuentas bancarias a los nuevos clientes.
+
+#### 1.2. Roles Involucrados
+- **Cliente**: Persona que solicita la apertura de una cuenta bancaria.
+- **Sistema Bancario**: Plataforma tecnológica utilizada para gestionar las cuentas bancarias.
+
+#### 1.3. Actores
+- **Solicitante**: Cliente que inicia el proceso de apertura de cuenta.
+- **Oficial de Servicio al Cliente**: Empleado del banco que asiste al solicitante en el proceso de apertura de cuenta.
+
+#### 1.4. Diagrama
+![Diagrama de Apertura de Cuentas](ruta/a/tu/imagen.png)
+
