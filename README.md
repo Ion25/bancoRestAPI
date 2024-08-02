@@ -69,5 +69,6 @@ Las pruebas de seguridad se enfocan en identificar y corregir vulnerabilidades d
 Este proyecto demuestra cómo aplicar principios de DDD junto con una arquitectura hexagonal para construir sistemas robustos y mantenibles. A través de pruebas rigurosas de API, rendimiento y seguridad, se asegura que el sistema no solo sea funcional, sino también eficiente y seguro.
 
 # Practicas BPM
-
+## Procesos de Negocio
+1.**Proceso de Apertura de Cuentas**:
 
