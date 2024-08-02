@@ -37,7 +37,10 @@ Arquitectura Hexagonal usando DDD
 
 
 # Pruebas de APIs
-* Postman
+## Herramienta Swagger
+
+![swagger](https://github.com/user-attachments/assets/9504e344-69f0-43dd-aeca-336c9873a126)
+
 
 # Pruebas de Rendimiento
 Para las pruebas de rendimiento utilizamos la herramienta JMeter, la cual nos proporcionó las pruebas a todas las funcionalidades críticas de nuestra aplicación bancaria. A continuación, se detallan los pasos y comandos utilizados para ejecutar las pruebas de rendimiento y generar los reportes correspondientes.
